@@ -14,3 +14,15 @@ def matrix_dot_vector(a: list[list[int | float]], b: list[int | float]) -> list[
         result.append(dot_product)
 
     return result
+
+#Transposr of a matrix
+def transpose_matrix(a: list[list[int|float]]) -> list[list[int|float]]:
+    b = []
+
+    for i in range(len(a[0])):
+        new_row = []
+        for j in a:
+            new_row.append(j[i])
+        b.append(new_row)
+
+	return b
